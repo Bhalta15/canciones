@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f4f6f7;
+}
+
+/* Barra superior */
+.top-bar {
+  background: #198754;
+  padding: 15px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.top-bar select,
+.top-bar button {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn {
+  background: #28a745;
+  color: white;
+  cursor: pointer;
+}
+
+/* Contenedor */
+.container {
+  background: #198754;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+/* Controles */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.controls input {
+  padding: 6px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Tabla */
+table {
+  width: 100%;
+  background: white;
+  color: black;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background: #e9ecef;
+}
+
+/* Paginación */
+.pagination {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.pagination button {
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 15px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  td {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  td::before {
+    font-weight: bold;
+  }
+
+  td:nth-child(1)::before { content: "Título"; }
+  td:nth-child(2)::before { content: "Artista"; }
+  td:nth-child(3)::before { content: "Categoría"; }
+  td:nth-child(4)::before { content: "Puesta"; }
+}
