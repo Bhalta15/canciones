@@ -9,58 +9,33 @@
 <body>
 
 <header class="top-bar">
- <select id="categoria">
-  <option value="">Todas las Categorías</option>
-  <option value="Cumbias">Cumbias</option>
-  <option value="Salsas">Salsas</option>
-  <option value="Rock">Rock</option>
-</select>
-
-
-  <select>
-    <option>Todos los Artistas</option>
-  </select>
-
-  <button class="btn">Filtrar</button>
+  <h2>🎵 Lista de Canciones</h2>
 </header>
 
 <main class="container">
-  <h1>Lista de Canciones</h1>
 
+  <!-- Buscador -->
   <div class="controls">
     <div>
-      Mostrar
-      <select>
-        <option>10</option>
-        <option>25</option>
-        <option>50</option>
-      </select>
-    </div>
-
-    <div>
       Buscar:
-      <input type="text" id="buscar" placeholder="Buscar canción...">
+      <input type="text" id="buscar" placeholder="Buscar por título o artista">
     </div>
   </div>
 
+  <!-- Tabla -->
   <table>
     <thead>
       <tr>
         <th>Título</th>
         <th>Artista</th>
-        <th>Categoría</th>
         <th>Puesta</th>
       </tr>
     </thead>
     <tbody id="tabla-canciones">
-      <!-- JS inserta aquí -->
+      <!-- JS inserta las filas -->
     </tbody>
   </table>
 
-  <div class="pagination">
-    <button>Anterior</button>
-    <button>Siguiente</button>
-  </div>
 </main>
 
 <script src="script.js"></script>
